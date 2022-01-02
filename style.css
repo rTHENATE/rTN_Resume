@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=M+PLUS+1+Code&family=Oswald:wght@200;400&family=PT+Sans&family=Permanent+Marker&family=Roboto+Mono&display=swap");
+
+* {
+  font-family: "Hind Siliguri", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(#87f3f3, #9198e5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background: white;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(255, 255, 255, 0.1);
+}
+
+.profileText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #747474;
+}
+
+.profileText .imgBx {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgb(255, 255, 255);
+}
+
+.profileText .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profileText h2 {
+  color: #ffffff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+.profileText h2 span {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.contactInfo {
+  padding-top: 40px;
+}
+
+.title {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.contactInfo ul {
+  position: relative;
+}
+
+.contactInfo ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.contactInfo ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #43c4ff;
+}
+
+.contactInfo ul li span {
+  color: #ffffff;
+  font-weight: 300;
+}
+.contactInfo.education li {
+  margin-bottom: 15px;
+}
+
+.contactInfo.education h5 {
+  color: #43c4ff;
+  font-weight: 500;
+}
+
+.contactInfo.education h4:nth-child(2) {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.contactInfo.education h4 {
+  color: rgb(177, 177, 177);
+  font-weight: 300;
+}
+
+.contactInfo.language .percent {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #222222;
+  display: block;
+  margin-top: 5px;
+}
+
+.contactInfo.language .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: aqua;
+}
+
+.container .left_Side {
+  position: relative;
+  background: linear-gradient(to right, rgb(45, 53, 54), rgb(50, 71, 71));
+  padding: 40px;
+}
+
+.container .right_Side {
+  position: relative;
+  background: linear-gradient(to right, rgb(247, 255, 255), rgb(219, 255, 253));
+  padding: 40px;
+}
+
+.about {
+  margin-bottom: 50px;
+}
+
+.about:last-child {
+  margin-bottom: 0;
+}
+
+.title2 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.about .box .year_company {
+  min-width: 150px;
+}
+
+.about .box .year_company h5 {
+  text-transform: uppercase;
+  color: #838383;
+  font-weight: 600;
+}
+
+.about .box .text h4 {
+  text-transform: uppercase;
+  color: #003147;
+  font-size: 16px;
+}
+
+.skills .box {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills .box h4 {
+  text-transform: uppercase;
+  color: #838383;
+  font-weight: 500;
+}
+
+.skills .box .percent {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #222222;
+}
+
+.skills .box .percent div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: aqua;
+}
+
+.interest ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.interest ul li {
+  list-style: none;
+  color: #000000;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.interest ul li .fa {
+  color: #43c4ff;
+  font-size: 18px;
+  width: 30px;
+}
+
+a {
+  position: relative;
+  top: 20px;
+  padding: 10px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgb(214, 214, 214), rgb(0, 225, 255));
+  margin: 40px;
+  transition: 1s;
+  text-decoration: none;
+  overflow: hidden;
+  -webkit-box-reflect: below 1px
+    linear-gradient(transparent, transparent, #0004);
+}
+
+a:hover {
+  background: var(--clr);
+  box-shadow: 0 0 10px var(--clr), 0 0 30px var(--clr), 0 0 60px var(--clr),
+    0 0 100px var(--clr);
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 400%;
+  background: var(--clr);
+  transition: 1s;
+  animation: animate 2s linear infinite;
+  animation-delay: calc(0.33s * var(--i));
+}
+
+a:hover::before {
+  width: 120%;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  background: linear-gradient(to right, rgb(36, 40, 42), rgb(39, 55, 61));
+  transition: 0.5s;
+}
+
+a:hover::after {
+  background: var(--clr);
+}
+
+a span {
+  position: relative;
+  z-index: 1;
+  font-size: 1em;
+  color: white;
+  opacity: 1;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  transition: 0.5s;
+}
+
+a:hover span {
+  opacity: 1;
+}
